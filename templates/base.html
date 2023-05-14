@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <title>{{titulo_pagina}}</title>
+</head>
+<body>
+    <h1>{{titulo_pagina}}</h1>
+    {% include "navBar.html" %}
+
+    {% block main %} {% endblock %}
+
+    {% include "rodape.html" %}
+</body>
+</html>
