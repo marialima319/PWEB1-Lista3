@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block main %}
+    <ul>
+    {% for item in carrinho %}
+        <li style="text-transform: capitalize;">{{item}}</li>
+    {% endfor %}
+    </ul>
+
+    <button><a href="/endCart">Fechar Compra</a></button>
+{% endblock %}

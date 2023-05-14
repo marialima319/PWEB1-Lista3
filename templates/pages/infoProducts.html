@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+<head>Informações do Produto</head>
+{% block main %}
+    <h1>Informações do Produto</h1>
+    <h2 style="text-transform: uppercase;">{{product}}</h2>
+    <ul>
+        <li>{{desc}}</li>
+        <li>{{tam}}</li>
+        <li>{{price}}</li>
+    </ul>
+    <button><a href="/addCart/{{product}}">Adicionar no Carrinho</a></button>
+
+{% endblock %}
